@@ -1,0 +1,56 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(bg.avif);
+    background-size: cover;
+}
+.sss{
+    margin: 30px;
+    width: 50vw;
+    height: 50vh;
+}
+.hide{
+    transform: scale(0);
+    opacity: 0.5;
+    transition: none;
+    transform-origin: center;
+    visibility: hidden;
+}
+.show{
+    transition: all 3s ease-in-out ;
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.buttondad,.buttonmom{
+    width: 10vw;
+    height: 6vh;
+}
+
+.buttondad{
+    background-color: yellow;
+}
+.buttonmom{
+    background-color: pink;
+}
+
+@media (max-width : 500px){
+    .buttondad,.buttonmom{
+        width: 30vw;
+        height: 7vh;
+    }
+    .sss{
+        margin: 8vw;
+        width: 80vw;
+        height: 50vh;
+    }
+    body{
+        background-image: url(bg\ phone.jpg);
+        background-size: cover;
+        
+        }
+}
