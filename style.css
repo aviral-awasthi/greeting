@@ -37,3 +37,19 @@ body{
 .buttonmom{
     background-color: pink;
 }
+@media (max-width : 500px){
+    .buttondad,.buttonmom{
+        width: 30vw;
+        height: 7vh;
+    }
+    .sss{
+        margin: 8vw;
+        width: 80vw;
+        height: 50vh;
+    }
+    body{
+        background-image: url(bg\ phone.jpg);
+        background-size: cover;
+        
+        }
+}
